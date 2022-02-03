@@ -4,7 +4,7 @@ ghpages.publish(
     'public', // path to public directory
     {
         branch: 'gh-pages',
-        repo: 'https://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@github.com/GraceGSy/VisRecResults.git', // Update to point to your repository  
+        repo: 'https://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/GraceGSy/VisRecResults.git', // Update to point to your repository  
         user: {
             name: 'Grace Guo', // update to use your name
             email: 'graceguo43@gmail.com' // Update to use your email
