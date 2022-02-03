@@ -35,6 +35,6 @@
 	{#await promise}
 		<p>...loading</p>
 	{:then data}
-		<UMAP dataset={data[0]} dataset_by_participant={data[1]} />
+		<UMAP dataset={data[0]} />
 	{/await}
 </div>

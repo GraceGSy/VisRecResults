@@ -115,7 +115,7 @@
 
 <div style="padding: '20px'">
 	<ResultsUMAP />
-	<Results />
+	<!-- <Results /> -->
 </div>
 
 <style>

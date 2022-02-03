@@ -2,7 +2,7 @@
 	import * as d3 from "d3"
 
 	export let dataset = []
-	
+
 	var margin = {top: 30, right: 30, bottom: 30, left: 30},
 	    width = 660 - margin.left - margin.right,
 	    height = 660 - margin.top - margin.bottom;
@@ -51,7 +51,7 @@
 			  	}
 		})
 		.on('mouseover', function (d, i) {
-        	vegaEmbed(`#hovervis`, d[0], {actions:false})
+        	vegaEmbed(`#hovervis`, i[0], {actions:false})
         });
 
 </script>
