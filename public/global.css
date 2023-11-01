@@ -1,3 +1,31 @@
+#center {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-left: 50px;
+}
+
+#introduction {
+	font-family: Helvetica, sans-serif;
+	width: 660px;
+}
+
+#vis {
+	display: flex;
+	width: 100%;
+}
+
+#umap {
+	margin-right: 50px;
+}
+
+#hovervis {
+	margin-top: 30px;
+	max-height: 600px;
+	overflow: scroll;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -28,7 +56,7 @@ a:visited {
 label {
 	display: block;
 }
-
+;
 input, button, select, textarea {
 	font-family: inherit;
 	font-size: inherit;
@@ -60,14 +88,4 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
-}
-
-#introduction {
-	font-family: Helvetica, sans-serif;
-	max-width: 800px;
-}
-
-#hovervis {
-	max-height: 600px;
-	overflow: scroll;
 }

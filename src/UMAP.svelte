@@ -20,8 +20,12 @@
 		.domain(d3.extent(dataset, d => d[1][0]))
 		.range([ width, 0 ]);
 	svg.append("g")
+		.attr("class", "axisBottom")
 		.attr("transform", "translate(0," + height + ")")
 		.call(d3.axisBottom(x).ticks(3));
+	svg.append("g")
+		.attr("class", "axisTop")
+		.call(d3.axisTop(x).ticks(0));
 
 	// Add Y axis
 	var y = d3.scaleLinear()
@@ -29,6 +33,9 @@
 		.range([ height, 0]);
 	svg.append("g")
 		.call(d3.axisLeft(y).ticks(3));
+	svg.append("g")
+		.attr("transform", `translate(${width}, 0)`)
+		.call(d3.axisRight(y).ticks(0));
 
 	// Add dots
 	svg.append('g')
@@ -50,6 +57,7 @@
 			  		return 'red'
 			  	}
 		})
+		.attr("cursor", "pointer")
 		.on('mouseover', function (d, i) {
         	vegaEmbed(`#hovervis`, i[0], {actions:false})
         });
